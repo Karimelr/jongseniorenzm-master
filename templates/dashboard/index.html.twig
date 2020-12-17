@@ -1,0 +1,111 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('images/banner.png') }}" class="d-block w-100" style="height: 750px;" alt="banner">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="box-1" class="col-sm">
+                <h3>Blog plaatsen?</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor nulla, molestie vitae bibendum
+                    in, tincidunt vitae libero. Phasellus in mattis diam. Suspendisse potenti. Aliquam rutrum odio
+                    euismod, porttitor dui ut, euismod enim. Nunc nec nibh tincidunt lorem</p>
+                <br>
+                <button type="button" class="button-box-1">Bekijk meer</button>
+            </div>
+            <div id="box-2" class="col-sm">
+                <h3>Wie zijn wij?</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor nulla, molestie vitae bibendum
+                    in, tincidunt vitae libero. Phasellus in mattis diam. Suspendisse potenti. Aliquam rutrum odio
+                    euismod, porttitor dui ut, euismod enim. Nunc nec nibh tincidunt lorem</p>
+                <br>
+                <button type="button" class="button-box-2">Bekijk meer</button>
+            </div>
+            <div id="box-3" class="col-sm">
+                <h3>Account aanmaken?</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor nulla, molestie vitae bibendum
+                    in, tincidunt vitae libero. Phasellus in mattis diam. Suspendisse potenti. Aliquam rutrum odio
+                    euismod, porttitor dui ut, euismod enim. Nunc nec nibh tincidunt lorem</p>
+                <br>
+                <button type="button" class="button-box-3">Bekijk meer</button>
+            </div>
+        </div>
+    </div>
+    <section>
+        <h2 id="titels"><b>WERKGROEPEN</b></h2>
+        <div class="container-fluid">
+            {#foreach#}
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis iaculis neque, vel
+                        condimentum massa. Nam vel turpis nibh. Donec in enim risus. Cras eu ante lorem. Nulla ac
+                        dui in odio lobortis rutrum. Duis odio massa, commodo quis enim eu, laoreet ultricies orci.
+                        In varius egestas justo, ut tristique ex elementum eget. Nulla sed tincidunt ex lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Integer quis iaculis neque, vel condimentum
+                        massa. Nam vel turpis nibh. Donec in enim risus. Cras eu ante lorem. Nulla ac dui in odio
+                        lobortis rutrum. Duis odio massa, commodo quis enim eu, laoreet ultricies orci. In varius
+                        egestas justo, ut tristique ex elementum eget. Nulla sed tincidunt ex.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{{ asset('images/temp_image.png') }}" class="img-responsive" alt="fashion">
+                </div>
+            </div>
+            {#endfor#}
+        </div>
+    </section>
+    <div id="quote" class="container-fluid">
+        <h2><b>“SENIORITEIT KENT GEEN (LEEF)TIJD”</b></h2>
+    </div>
+    <section>
+        <h2 id="titels"><b>LAATSTE ARTIKELEN</b></h2>
+
+    </section>
+    <div id="quote" class="container-fluid">
+        <h2><b>“QUOTE”</b></h2>
+    </div>
+    <section>
+        <h2 id="titels"><b>OVER ONS</b></h2>
+        <div class="container-fluid">
+            {#foreach#}
+            <div class="row">
+                <div class="col-lg-6">
+                    <p><b>Jongsenioren Zoetermeer</b></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis iaculis neque, vel
+                        condimentum massa. Nam vel turpis nibh. Donec in enim risus. Cras eu ante lorem. Nulla ac
+                        dui in odio lobortis rutrum. Duis odio massa, commodo quis enim eu, laoreet ultricies orci.
+                        In varius egestas justo, ut tristique ex elementum eget. Nulla sed tincidunt ex lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Integer quis iaculis neque, vel condimentum
+                        massa. Nam vel turpis nibh. Donec in enim risus. Cras eu ante lorem. Nulla ac dui in odio
+                        lobortis rutrum. Duis odio massa, commodo quis enim eu, laoreet ultricies orci. In varius
+                        egestas justo, ut tristique ex elementum eget. Nulla sed tincidunt ex.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="{{ asset('images/temp_image.png') }}" class="img-responsive" alt="fashion">
+                </div>
+            </div>
+            {#endfor#}
+        </div>
+    </section>
+    <div id="quote" class="container-fluid">
+        <h2><b>“QUOTE”</b></h2>
+    </div>ja
+    <section>
+        <h2 id="titels"><b>EVENEMENTEN</b></h2>
+        <div class="container-fluid">
+            {#foreach#}
+                    <img src="{{ asset('images/agenda_temp.png') }}" class="center" alt="fashion">
+                </div>
+            {#endfor#}
+    </section>
+    <div id="footer" class="container-fluid">
+        <h5><b>2020 | JONGSENIORENZM ©</b></h5>
+    </div>
+{% endblock %}
